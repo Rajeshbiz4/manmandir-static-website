@@ -1,0 +1,24 @@
+/* CSS Reset - Optional, use if necessary to reset default browser styles */
+
+/* Your website styles */
+/* Add your website's styles here */
+
+/* WhatsApp Sticky Icon Button Styles */
+.whatsapp-sticky {
+  position: fixed;
+  bottom: 20px; /* Adjust as needed */
+  right: 20px; /* Adjust as needed */
+  z-index: 999;
+}
+
+.whatsapp-sticky img {
+  width: 60px; /* Adjust the size as needed */
+  height: 60px; /* Adjust the size as needed */
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease;
+}
+
+.whatsapp-sticky img:hover {
+  transform: scale(1.1);
+}
