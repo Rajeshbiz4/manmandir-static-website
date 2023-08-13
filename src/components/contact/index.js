@@ -1,6 +1,5 @@
 import React from "react";
 import contatBanner from "../../assets/contat-banner.png";
-import ContactUsMap from "../../components/contat-us-mpa";
 import "./contact.css";
 
 const Contact = () => {
@@ -52,7 +51,6 @@ const Contact = () => {
 
         <button type="submit">Submit</button>
       </div>
-      {/* <ContactUsMap /> */}
     </div>
   );
 };
