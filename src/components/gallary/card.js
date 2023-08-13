@@ -3,19 +3,19 @@ import React from "react";
 import "./home.css";
 import myimg from "../../assets/abc.png";
 
-const Card = () => {
+const Card = ({ url, title, desc, weight, type }) => {
   return (
     <figure class="snip1527 hover">
       <div class="image">
-        <img src={myimg} alt="pr-sample24" />
+        <img src={url} alt="pr-sample24" />
       </div>
       <figcaption>
         <div class="date">
-          <span class="day">3.5</span>
+          <span class="day">{weight}</span>
           <span class="month">KG</span>
         </div>
-        <h3>Sagwan mandir</h3>
-        <p>15" x 9" x 21'' Burma Teakwood Temple (Natural Polish)</p>
+        <h3>{title}</h3>
+        <p>{desc}</p>
       </figcaption>
       <a href="#"></a>
     </figure>

@@ -1,29 +1,28 @@
 import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./home.css";
 import Card from "./card";
+import FilterComponent from "../Filter";
+import data from "./data";
 
 const Gallary = () => {
+  const filterOptions = ["SAGVAN", "SHISAM"];
+  const [filter, setFilter] = useState(filterOptions[0]);
+  const [result, setResult] = useState();
+  useEffect(() => {
+    console.log("filter", filter);
+    setResult(data.filter((item) => item.type === filter));
+  }, [filter]);
+
   return (
-    <div class="flex-container">
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-    </div>
+    <>
+      <FilterComponent onFilter={setFilter} />
+      <div class="flex-container">
+        {result?.map((item) => {
+          return <Card {...item} />;
+        })}
+      </div>
+    </>
   );
 };
 

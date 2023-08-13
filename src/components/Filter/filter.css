@@ -1,0 +1,11 @@
+.filter-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 15px;
+  justify-content: center;
+}
+
+.radio-button {
+  margin-right: 10px;
+}
