@@ -1,6 +1,7 @@
 import React from "react";
 import contatBanner from "../../assets/contat-banner.png";
 import ContactUsMap from "../../components/contat-us-mpa";
+import "./contact.css";
 
 const Contact = () => {
   return (
@@ -14,9 +15,17 @@ const Contact = () => {
       </div>
 
       <div class="container">
-        <input type="text" id="name" name="name" placeholder="Name" required />
+        <input
+          className="input-class"
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Name"
+          required
+        />
 
         <input
+          className="input-class"
           type="email"
           id="email"
           name="email"
@@ -24,6 +33,7 @@ const Contact = () => {
           required
         />
         <input
+          className="input-class"
           type="email"
           id="email"
           name="email"
@@ -32,6 +42,7 @@ const Contact = () => {
         />
 
         <textarea
+          className="input-class"
           id="message"
           name="message"
           rows="4"
@@ -41,7 +52,7 @@ const Contact = () => {
 
         <button type="submit">Submit</button>
       </div>
-      <ContactUsMap />
+      {/* <ContactUsMap /> */}
     </div>
   );
 };
