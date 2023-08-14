@@ -1,8 +1,8 @@
 import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom";
 import React, { useEffect, useState } from "react";
 import "./home.css";
-import Card from "./card";
-import FilterComponent from "../Filter";
+import Card from "../../components/card/card";
+import FilterComponent from "../../components/Filter";
 import data from "./data";
 
 const Gallary = () => {

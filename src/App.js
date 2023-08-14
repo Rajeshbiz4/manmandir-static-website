@@ -2,11 +2,11 @@ import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom";
 import React from "react";
 import NavBar from "./components/navbar";
 import ContactDetailBar from "./components/contact-details-bar";
-import Gallary from "./components/gallary";
+import Gallary from "./pages/gallary";
 import Footer from "./components/footer";
-import About from "./components/about";
-import Contact from "./components/contact";
-import Home from "./components/home";
+import About from "./pages/about";
+import Contact from "./pages/contact";
+import Home from "./pages/home";
 import WhatsAppButton from "./components/whatsappButton";
 import "./App.css";
 
