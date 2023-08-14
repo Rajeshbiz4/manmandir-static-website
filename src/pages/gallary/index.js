@@ -4,9 +4,10 @@ import "./home.css";
 import Card from "../../components/card/card";
 import FilterComponent from "../../components/Filter";
 import data from "./data";
+import filterOptions from "../../constants";
 
 const Gallary = () => {
-  const filterOptions = ["SAGVAN", "SHISAM"];
+  // const filterOptions = ["SAGVAN", "SHISAM"];
   const [filter, setFilter] = useState(filterOptions[0]);
   const [result, setResult] = useState();
   useEffect(() => {

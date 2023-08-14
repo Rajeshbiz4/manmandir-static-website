@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import "./filter.css";
+import filterOptions from "../../constants";
 
 const FilterComponent = ({ onFilter }) => {
-  const filterOptions = ["SAGVAN", "SHISAM"];
+  // const filterOptions = ["SAGVAN", "SHISAM"];
   const [selectedOption, setSelectedOption] = useState(filterOptions[0]);
 
   const handleOptionChange = (event) => {
