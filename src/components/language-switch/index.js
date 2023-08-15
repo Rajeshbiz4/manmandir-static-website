@@ -2,6 +2,8 @@
 
 import React from "react";
 import { useTranslation } from "react-i18next";
+import "./language-switch.css";
+import { languages } from "../../constants";
 
 function LanguageSwitcher() {
   const { i18n } = useTranslation();
@@ -11,9 +13,12 @@ function LanguageSwitcher() {
   };
 
   return (
-    <div>
-      <button onClick={() => changeLanguage("en")}>English</button>
-      <button onClick={() => changeLanguage("es")}>Español</button>
+    <div className="language-container">
+      {languages.map((item) => (
+        <a className="language-item" onClick={() => changeLanguage(item.key)}>
+          {item.value}
+        </a>
+      ))}
     </div>
   );
 }

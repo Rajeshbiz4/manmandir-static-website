@@ -1,0 +1,10 @@
+.language-container {
+  display: flex;
+  justify-content: end;
+}
+
+.language-item {
+  width: 70px;
+  padding: 4px;
+  cursor: pointer;
+}

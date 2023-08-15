@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./filter.css";
-import filterOptions from "../../constants";
+import { filterOptions } from "../../constants";
 
 const FilterComponent = ({ onFilter }) => {
   // const filterOptions = ["SAGVAN", "SHISAM"];

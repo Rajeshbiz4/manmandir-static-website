@@ -1,3 +1,2 @@
-const filterOptions = ["SAGVAN", "SHISAM"];
-
-export default filterOptions;
+export { default as languages } from "./language";
+export { default as filterOptions } from "./filterOptions";

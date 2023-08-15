@@ -4,7 +4,7 @@ import "./home.css";
 import Card from "../../components/card/card";
 import FilterComponent from "../../components/Filter";
 import data from "./data";
-import filterOptions from "../../constants";
+import { filterOptions } from "../../constants";
 
 const Gallary = () => {
   // const filterOptions = ["SAGVAN", "SHISAM"];
