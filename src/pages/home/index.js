@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { increment, decrement } from "../../redux/slice/counterSlice";
 import PostsList from "./postList";
 import { useTranslation } from "react-i18next";
+import MapComponent from "../../components/map-component";
 
 const Home = () => {
   const counter = useSelector((state) => state.counter);

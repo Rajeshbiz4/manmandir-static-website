@@ -1,0 +1,17 @@
+1. map
+2. subruting / auth /paths configuration
+3. Admin/ login/ 
+4.Dashboard
+5. orders / CRUD 
+6. Gallary CRUD
+7. user / CRUD
+7. masted data - sagvan, shisam, 
+- home pages
+- about page 
+- add all localization data
+- dyanamic data
+
+mobile App
+- login
+- place orders
+- designs / Gallary
