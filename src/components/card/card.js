@@ -1,8 +1,3 @@
-import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom";
-import React from "react";
-// import "./home.css";
-import myimg from "../../assets/abc.png";
-
 const Card = ({ url, title, desc, weight, type }) => {
   return (
     <figure class="snip1527 hover">

@@ -1,10 +1,11 @@
 1. map
 2. subruting / auth /paths configuration
 3. Admin/ login/ 
-4.Dashboard
-5. orders / CRUD 
+4.Dashboard - analytics - no of customers. sales, orders(panding, fulfilled), branches, stocks, 
+5. orders / CRUD / status
 6. Gallary CRUD
 7. user / CRUD
+8. Customer database
 7. masted data - sagvan, shisam, 
 - home pages
 - about page 
@@ -14,4 +15,18 @@
 mobile App
 - login
 - place orders
-- designs / Gallary
+- designs / Gallary - With all the products.
+
+=================================
+place order : mandir, sofa, bed
+1. ${item} type
+2. size:
+3. polish:
+4. Electric -light 
+5. acryic background
+6. decoration - stick paper background and ghanti
+7. Customer name
+8. Email/mobile
+9. Address
+10. delivery date
+
