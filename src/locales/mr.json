@@ -1,5 +1,17 @@
+
 {
-  "greeting": "Hello, world!",
-  "welcome": "marathi",
-  "buttonText": "Click me"
+  "manmandir":"मनमंदिर",
+  "home":"होम",
+  "gallary":"गैलरी",
+  "contact":"संपर्क",
+  "getintouch":"संपर्कात रहाण्यासाठी",
+  "footerAddress":"प्रभात नगर, मेन रोड, सृष्टी चौक, नर्सरी समोर. पिंपळे गुरव 411061",
+  "email":"manmandir@gmail.com",
+  "mobile":"+९१ ९७६३५२२६२२",
+  "contact-desc":"खालील फॉर्मद्वारे आमच्याशी संपर्क साधा आणि आम्ही तुमच्याकडे परत येईपर्यंत प्रतीक्षा करा.",
+   "c-name":"नाव",
+  "c-mobile":"मोबाईल",
+  "c-email":"ईमेल",
+  "C-message":"संदेश",
+  "c-submit":"प्रस्तुत करणे"
 }

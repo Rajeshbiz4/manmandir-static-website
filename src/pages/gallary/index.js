@@ -7,7 +7,6 @@ import data from "./data";
 import { filterOptions } from "../../constants";
 
 const Gallary = () => {
-  // const filterOptions = ["SAGVAN", "SHISAM"];
   const [filter, setFilter] = useState(filterOptions[0]);
   const [result, setResult] = useState();
   useEffect(() => {
@@ -19,9 +18,16 @@ const Gallary = () => {
     <>
       <FilterComponent onFilter={setFilter} />
       <div class="flex-container">
-        {result?.map((item) => {
-          return <Card {...item} />;
-        })}
+        {result && result.length ? (
+          result?.map((item) => {
+            return <Card {...item} />;
+          })
+        ) : (
+          <span className="no-data">
+            Currenlty there is no any image available!!! Wait will uploading
+            soon ...
+          </span>
+        )}
       </div>
     </>
   );

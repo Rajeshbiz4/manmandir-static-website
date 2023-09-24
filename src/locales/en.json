@@ -1,6 +1,17 @@
 
 {
-  "greeting": "Hello, world!",
-  "welcome": "Welcome to my app.",
-  "buttonText": "Click me"
+  "manmandir":"MANMANDIR",
+  "home":"HOME",
+  "gallary":"GALLARY",
+  "contact":"CONTACT",
+  "getintouch":"GET IN TOUCH",
+  "footerAddress":"Prabhat nagar, Main Road, Shrushti chowk, opposite to Nursary. Pimple Gurav 411061",
+  "email":"manmandir@gmail.com",
+  "mobile":"+91 9763522622",
+  "contact-desc":" Contact us through the form below and wait for us to get back to you.",
+  "c-name":"Name",
+  "c-mobile":"Mobile",
+  "c-email":"Email",
+  "C-message":"Message",
+  "c-submit":"Submit"
 }

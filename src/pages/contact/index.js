@@ -1,16 +1,16 @@
 import React from "react";
 import contatBanner from "../../assets/contat-banner.png";
 import "./contact.css";
+import { useTranslation } from "react-i18next";
 
 const Contact = () => {
+  const { t } = useTranslation();
   return (
     <div>
       <img src={contatBanner} alt="" height={200} width="100%" />
       <div className="contact-container">
-        <h1>CONTACT US</h1>
-        <p>
-          Contact us through the form below and wait for us to get back to you.
-        </p>
+        <h1> {t("contact")}</h1>
+        <p>{t("contact-desc")}</p>
       </div>
 
       <div class="container">
@@ -19,7 +19,7 @@ const Contact = () => {
           type="text"
           id="name"
           name="name"
-          placeholder="Name"
+          placeholder={t("c-name")}
           required
         />
 
@@ -28,7 +28,7 @@ const Contact = () => {
           type="email"
           id="email"
           name="email"
-          placeholder="Mobile"
+          placeholder={t("c-mobile")}
           required
         />
         <input
@@ -36,7 +36,7 @@ const Contact = () => {
           type="email"
           id="email"
           name="email"
-          placeholder="Email"
+          placeholder={t("c-email")}
           required
         />
 
@@ -45,11 +45,11 @@ const Contact = () => {
           id="message"
           name="message"
           rows="4"
-          placeholder="Message"
+          placeholder={t("C-message")}
           required
         ></textarea>
 
-        <button type="submit">Submit</button>
+        <button type="submit"> {t("c-submit")}</button>
       </div>
     </div>
   );

@@ -157,3 +157,10 @@
 }
 
 /* Demo purposes only */
+.no-data {
+  height: 20vh;
+  text-align: center;
+  color: red;
+  font-size: 20px;
+  padding: 100px;
+}

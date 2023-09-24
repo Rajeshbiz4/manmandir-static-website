@@ -1,9 +1,10 @@
-import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom";
 import React from "react";
+import { useTranslation } from "react-i18next";
 import "./footer.css";
 import footerLogo from "../../assets/manmanir.jpeg";
 
 const Footer = () => {
+  const { t } = useTranslation();
   return (
     <footer>
       <div class="footer-content">
@@ -13,17 +14,14 @@ const Footer = () => {
           </div>
         </div>
         <div className="right">
-          <h3>GET IN TOUCH</h3>
+          <h3>{t("getintouch")}</h3>
 
           <ul class="contact">
-            <li class="add">
-              Office no. 101, First floor, Silver point building, Katraj -
-              Kondhwa Rd, near Vishwa gym, Katraj Pune - 411046
-            </li>
+            <li class="add">{t("footerAddress")}</li>
             <br />
             <br />
             <br />
-            <li>+91 XXXXXXXXXX</li>
+            <li>{t("mobile")}</li>
             <br />
             <li>manmandir@gmail.com</li>
           </ul>
@@ -64,13 +62,13 @@ const Footer = () => {
         <div class="footer-menu">
           <ul class="f-menu">
             <li>
-              <a href="">Home</a>
+              <a href="">{t("home")}</a>
             </li>
             <li>
-              <a href="">Gallary</a>
+              <a href="">{t("gallary")}</a>
             </li>
             <li>
-              <a href="">Contact</a>
+              <a href="">{t("contact")}</a>
             </li>
           </ul>
         </div>

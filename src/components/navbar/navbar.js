@@ -1,11 +1,11 @@
-import { BrowserRouter, Switch, Route, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import React from "react";
-import footerLogo from "../../assets/manmanir.jpeg";
+import { useTranslation } from "react-i18next";
 import LanguageSwitcher from "../language-switch";
 
 const NavBar = () => {
   const [click, setClick] = React.useState(false);
-
+  const { t } = useTranslation();
   const handleClick = () => setClick(!click);
   const Close = () => setClick(false);
 
@@ -20,7 +20,8 @@ const NavBar = () => {
         <nav className="navbar" onClick={(e) => e.stopPropagation()}>
           <div className="nav-container">
             <NavLink exact to="/" className="nav-logo">
-              <i class="fa fa-home" aria-hidden="true"></i>&nbsp; मनमंदिर
+              <i class="fa fa-home" aria-hidden="true"></i>&nbsp;
+              {t("manmandir")}
               {/* <i className="fa fa-code"></i> */}
             </NavLink>
             <ul className={click ? "nav-menu active" : "nav-menu"}>
@@ -32,7 +33,7 @@ const NavBar = () => {
                   className="nav-links"
                   onClick={click ? handleClick : null}
                 >
-                  Home
+                  {t("home")}
                 </NavLink>
               </li>
               {/* <li className="nav-item">
@@ -54,7 +55,7 @@ const NavBar = () => {
                   className="nav-links"
                   onClick={click ? handleClick : null}
                 >
-                  Gallary
+                  {t("gallary")}
                 </NavLink>
               </li>
               <li className="nav-item">
@@ -65,7 +66,7 @@ const NavBar = () => {
                   className="nav-links"
                   onClick={click ? handleClick : null}
                 >
-                  Contact Us
+                  {t("contact")}
                 </NavLink>
               </li>
               {/* <li className="nav-item">
