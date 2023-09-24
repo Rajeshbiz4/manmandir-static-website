@@ -6,6 +6,7 @@ import Gallary from "./pages/gallary";
 import Footer from "./components/footer";
 import About from "./pages/about";
 import Contact from "./pages/contact";
+import Login from "./pages/login/login";
 import Home from "./pages/home";
 import WhatsAppButton from "./components/whatsappButton";
 import "./App.css";
@@ -22,9 +23,10 @@ const App = () => {
 
           <Routes>
             <Route exact path="/" element={<Home />}></Route>
-            <Route path="/about" element={<About />} />
+            {/* <Route path="/about" element={<About />} /> */}
             <Route path="/gallary" element={<Gallary />} />
             <Route path="/contact" element={<Contact />} />
+            {/* <Route path="/login" element={<Login />} /> */}
           </Routes>
         </div>
         <Footer />

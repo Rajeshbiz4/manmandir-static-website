@@ -35,7 +35,7 @@ const NavBar = () => {
                   Home
                 </NavLink>
               </li>
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <NavLink
                   exact
                   to="/about"
@@ -45,7 +45,7 @@ const NavBar = () => {
                 >
                   About
                 </NavLink>
-              </li>
+              </li> */}
               <li className="nav-item">
                 <NavLink
                   exact
@@ -68,6 +68,17 @@ const NavBar = () => {
                   Contact Us
                 </NavLink>
               </li>
+              {/* <li className="nav-item">
+                <NavLink
+                  exact
+                  to="/login"
+                  activeClassName="active"
+                  className="nav-links"
+                  onClick={click ? handleClick : null}
+                >
+                  Login
+                </NavLink>
+              </li> */}
             </ul>
             <div className="nav-icon" onClick={handleClick}>
               <i className={click ? "fa fa-times" : "fa fa-bars"}></i>

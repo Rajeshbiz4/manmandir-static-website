@@ -1,6 +1,10 @@
 .language-container {
   display: flex;
   justify-content: end;
+  background: #9a3333;
+  color: #fff;
+  font-weight: bold;
+  text-align: start;
 }
 
 .language-item {
