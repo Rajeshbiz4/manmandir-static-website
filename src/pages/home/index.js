@@ -1,16 +1,10 @@
 import React from "react";
-import { useSelector, useDispatch } from "react-redux";
-import { increment, decrement } from "../../redux/slice/counterSlice";
-import PostsList from "./postList";
 import { useTranslation } from "react-i18next";
-import MapComponent from "../../components/map-component";
 import "./homepage.css";
 import Products from "./products";
 import Branches from "./branches";
 
 const Home = () => {
-  const counter = useSelector((state) => state.counter);
-  const dispatch = useDispatch();
   const { t } = useTranslation();
   console.log("t", t("welcome"));
   const url =

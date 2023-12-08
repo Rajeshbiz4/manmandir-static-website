@@ -1,6 +1,6 @@
 .language-container {
   display: flex;
-  justify-content: end;
+  /* justify-content: end; */
   background: #9a3333;
   color: #fff;
   font-weight: bold;

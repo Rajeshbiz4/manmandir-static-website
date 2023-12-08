@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom";
+
 import React, { useEffect, useState } from "react";
 import "./home.css";
 import Card from "../../components/card/card";
