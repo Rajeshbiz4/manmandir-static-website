@@ -14,11 +14,11 @@ function LanguageSwitcher() {
 
   return (
     <div className="language-container">
-      {languages.map((item) => (
+      {/* {languages.map((item) => (
         <a className="language-item" onClick={() => changeLanguage(item.key)}>
           {item.value}
         </a>
-      ))}
+      ))} */}
     </div>
   );
 }
