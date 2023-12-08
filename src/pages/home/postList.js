@@ -5,16 +5,16 @@ import { useDispatch, useSelector } from "react-redux";
 import { fetchPosts } from "../../redux/slice/postSlice";
 
 function PostsList() {
-  const dispatch = useDispatch();
+  // const dispatch = useDispatch();
   const posts = useSelector((state) => state?.post?.posts);
 
-  useEffect(() => {
-    dispatch(fetchPosts());
-  }, []);
+  // useEffect(() => {
+  //   dispatch(fetchPosts());
+  // }, []);
 
-  useEffect(() => {
-    console.log("ABC", posts);
-  }, [posts]);
+  // useEffect(() => {
+  //   console.log("ABC", posts);
+  // }, [posts]);
 
   //   useEffect(() => {
   //     if (status === "idle") {
