@@ -3,14 +3,14 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import "./language-switch.css";
-import { languages } from "../../constants";
+// import { languages } from "../../constants";
 
 function LanguageSwitcher() {
   const { i18n } = useTranslation();
 
-  const changeLanguage = (lng) => {
-    i18n.changeLanguage(lng);
-  };
+  // const changeLanguage = (lng) => {
+  //   i18n.changeLanguage(lng);
+  // };
 
   return (
     <div className="language-container">
