@@ -59,7 +59,7 @@ const Footer = () => {
         <p>
           {/* <a href="#">copyright &copy; 2023. All Rights reserved</a>{" "} */}
         </p>
-        <div class="footer-menu">
+        {/* <div class="footer-menu">
           <ul class="f-menu">
             <li>
               <a href="">{t("home")}</a>
@@ -71,7 +71,7 @@ const Footer = () => {
               <a href="">{t("contact")}</a>
             </li>
           </ul>
-        </div>
+        </div> */}
       </div>
     </footer>
   );
