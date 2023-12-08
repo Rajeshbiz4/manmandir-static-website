@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import React, { useState } from "react";
+import React from "react";
 import Gallary from "./pages/gallary";
 import Contact from "./pages/contact";
 import Login from "./pages/login/login";

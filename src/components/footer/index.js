@@ -25,7 +25,7 @@ const Footer = () => {
             <br />
             <li>manmandir@gmail.com</li>
           </ul>
-          <ul class="socials">
+          {/* <ul class="socials">
             <li>
               <a href="#">
                 <i class="fa fa-facebook"></i>
@@ -51,13 +51,13 @@ const Footer = () => {
                 <i class="fa fa-linkedin-square"></i>
               </a>
             </li>
-          </ul>
+          </ul> */}
         </div>
       </div>
 
       <div class="footer-bottom">
         <p>
-          <a href="#">copyright &copy; 2023. All Rights reserved</a>{" "}
+          {/* <a href="#">copyright &copy; 2023. All Rights reserved</a>{" "} */}
         </p>
         <div class="footer-menu">
           <ul class="f-menu">

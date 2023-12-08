@@ -12,7 +12,7 @@ const Card = ({ url, title, desc, weight, type }) => {
         <h3>{title}</h3>
         <p>{desc}</p>
       </figcaption>
-      <a href="#"></a>
+      {/* <a href="#">A</a> */}
     </figure>
   );
 };
