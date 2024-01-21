@@ -306,6 +306,7 @@ button {
     color: #7c2c0c;
     font-weight: bold;
     line-height: 60px;
+    text-align: justify;
 }
 
 .banner_text {
@@ -316,6 +317,7 @@ button {
     margin: 0px;
     padding-top: 30px;
     font-weight: 500;
+    text-align: justify;
 }
 
 .btn_main {
@@ -508,7 +510,8 @@ button {
 .box_main {
     width: 100%;
     border: 1px solid #aa7662;
-    padding: 50px;
+    padding: 25px;
+    margin-bottom: 30px;
 }
 
 .box_main:hover {
@@ -782,7 +785,7 @@ input.email_text::placeholder {
     float: left;
     background-color: #100703;
     height: auto;
-    padding: 90px 0px;
+    /* padding: 90px 0px; */
 }
 
 .footer_location_text {

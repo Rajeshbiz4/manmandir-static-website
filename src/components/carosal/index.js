@@ -4,92 +4,49 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import Img from '../../assets/download.jpg';
 
 const CarouselPage = () => {
+  const products = [
+   { key: "SAGVAN MANDIR", Value : 'A sacred space made from Sagwan wood, designed for religious or spiritual practices.', img: 'images/img-6.png'},
+
+    {key:"SHISAM MANDIR", Value: "A prayer or meditation area crafted from Sheesham wood, known for its durability and beautiful grain.", img: 'images/img-4.png'},
+    
+    {key:"SOFA SET", Value: "A comfortable ensemble of sofas and chairs, perfect for lounging and relaxation in the living room.", img: 'images/img-6.png'},
+    
+    {key:"BED" , Value: "A cozy furniture piece for sleeping, typically consisting of a mattress on a bed frame.", img: 'images/img-6.png'},
+    
+    {key:"WARDROBE", Value: "A tall cabinet with compartments for organized storage of clothes and personal items.",img: 'images/img-6.png'},
+    
+    {key:"TABLE", Value: "A flat-surfaced piece of furniture with legs, used for various activities like dining, working, or displaying items.",img: 'images/img-6.png'}
+  ];
+
   return (
     <Carousel>
-      <div class="banner_section layout_padding">
-        <div id="main_slider" class="carousel slide" data-ride="carousel">
-          <div class="carousel-inner">
-
-
-
-
-            <div class="carousel-item active">
-              <div class="container">
-                <div class="row">
-                  <div class="col-md-6">
-                    <h1 class="banner_taital">Best Design of Furnitur</h1>
-                    <p class="banner_text">It is a long established fact that a reader will bedistracted by the readable content of  It is a long established fact that a reader will bedistracted by the readable content of </p>
-                    <div class="btn_main">
-                      <div class="contact_bt"><a href="#">Contact US</a></div>
+      {products.map((item) => {
+        return (
+          <div class="banner_section layout_padding">
+          <div id="main_slider" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <h1 class="banner_taital">{item.key}</h1>
+                      <p class="banner_text">{item.Value} </p>
+                      <div class="btn_main">
+                        <div class="contact_bt"><a href="#">View Gallary</a></div>
+                      </div>
                     </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="image_1"><img src="images/img-1.png" /></div>
+                    <div class="col-md-6">
+                      <div class="image_1"><img src={item.img} /></div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-
-
           </div>
         </div>
-      </div>
-      <div class="banner_section layout_padding">
-        <div id="main_slider" class="carousel slide" data-ride="carousel">
-          <div class="carousel-inner">
-
-
-
-
-            <div class="carousel-item active">
-              <div class="container">
-                <div class="row">
-                  <div class="col-md-6">
-                    <h1 class="banner_taital">Best <br /> Design <br />of Furnitur</h1>
-                    <p class="banner_text">It is a long established fact that a reader will bedistracted by the readable content of </p>
-                    <div class="btn_main">
-                      <div class="contact_bt"><a href="#">Contact US</a></div>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="image_1"><img src="images/img-1.png" /></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-
-          </div>
-        </div>
-      </div>
-      <div class="banner_section layout_padding">
-        <div id="main_slider" class="carousel slide" data-ride="carousel">
-          <div class="carousel-inner">
-
-
-
-
-            <div class="carousel-item active">
-              <div class="container">
-                <div class="row">
-                  <div class="col-md-6">
-                    <h1 class="banner_taital">Best <br /> Design <br />of Furnitur</h1>
-                    <p class="banner_text">It is a long established fact that a reader will bedistracted by the readable content of </p>
-                    <div class="btn_main">
-                      <div class="contact_bt"><a href="#">Contact US</a></div>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="image_1"><img src="images/img-1.png" /></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-
-          </div>
-        </div>
-      </div>
+        )
+      })}
+    
     </Carousel>
   );
 };
