@@ -23,14 +23,14 @@ const About = () => {
               <div class="col-md-6">
                  <h1 class="about_taital">GOD TEMPLE</h1>
                  <p class="about_text">  A sales shop offering a divine selection of religious and spiritual items, providing a sacred space for customers to find meaningful and inspirational products for their spiritual journeys."</p>
-          <div class="readmore_bt"><a href="#">VIEW GALLARY</a></div>
+          <div class="readmore_bt"><a href="/gallary">VIEW GALLARY</a></div>
               </div>
 
 
               <div class="col-md-6">
                  <h1 class="about_taital">HOME FURNITURE</h1>
                  <p class="about_text"> A one-stop destination for stylish and functional furniture solutions, offering a curated collection to enhance the comfort and aesthetic of your living space. Discover a range of sofas, beds, wardrobes, tables, and more to transform your home into a cozy and personalized haven."</p>
-          <div class="readmore_bt"><a href="#">VIEW GALLARY</a></div>
+          <div class="readmore_bt"><a href="/gallary">VIEW GALLARY</a></div>
               </div>
            </div>
         </div>

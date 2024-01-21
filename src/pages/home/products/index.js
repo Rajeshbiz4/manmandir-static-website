@@ -27,7 +27,7 @@ const Products = () => {
                <p class="chair_text">{item.key}</p>
                <div class="image_3" href="#"><img src={item.img}/></div>
                <p class="chair_text">{item.Value}</p>
-               <div class="buy_bt"><a href="#">view more</a></div>
+               <div class="buy_bt"><a href="/gallary">view more</a></div>
             </div>
          </div>
           );
