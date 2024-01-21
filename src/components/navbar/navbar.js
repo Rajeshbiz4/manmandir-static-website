@@ -11,82 +11,37 @@ const NavBar = () => {
 
   return (
     <>
-      <LanguageSwitcher />
-      <div>
-        <div
-          className={click ? "main-container" : ""}
-          onClick={() => Close()}
-        />
-        <nav className="navbar" onClick={(e) => e.stopPropagation()}>
-          <div className="nav-container">
-            <NavLink exact to="/" className="nav-logo">
-              <i class="fa fa-home" aria-hidden="true"></i>&nbsp;
-              {t("manmandir")}
-              {/* <i className="fa fa-code"></i> */}
-            </NavLink>
-            <ul className={click ? "nav-menu active" : "nav-menu"}>
-              <li className="nav-item">
-                <NavLink
-                  exact
-                  to="/"
-                  activeClassName="active"
-                  className="nav-links"
-                  onClick={click ? handleClick : null}
-                >
-                  {t("home")}
-                </NavLink>
-              </li>
-              {/* <li className="nav-item">
-                <NavLink
-                  exact
-                  to="/about"
-                  activeClassName="active"
-                  className="nav-links"
-                  onClick={click ? handleClick : null}
-                >
-                  About
-                </NavLink>
-              </li> */}
-              <li className="nav-item">
-                <NavLink
-                  exact
-                  to="/gallary"
-                  activeClassName="active"
-                  className="nav-links"
-                  onClick={click ? handleClick : null}
-                >
-                  {t("gallary")}
-                </NavLink>
-              </li>
-              <li className="nav-item">
-                <NavLink
-                  exact
-                  to="/contact"
-                  activeClassName="active"
-                  className="nav-links"
-                  onClick={click ? handleClick : null}
-                >
-                  {t("contact")}
-                </NavLink>
-              </li>
-              {/* <li className="nav-item">
-                <NavLink
-                  exact
-                  to="/login"
-                  activeClassName="active"
-                  className="nav-links"
-                  onClick={click ? handleClick : null}
-                >
-                  Login
-                </NavLink>
-              </li> */}
-            </ul>
-            <div className="nav-icon" onClick={handleClick}>
-              <i className={click ? "fa fa-times" : "fa fa-bars"}></i>
-            </div>
-          </div>
-        </nav>
-      </div>
+         
+      <div class="header_section">
+         <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+               <a class="logo" href="index.html"><img src="images/logo.png" alt="" /></a>
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                     <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="design.html">Products</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="design.html">Gallary</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                     </li>
+                  </ul>
+                 
+               </div>
+               </div>
+         </nav>
+         </div>
     </>
   );
 };

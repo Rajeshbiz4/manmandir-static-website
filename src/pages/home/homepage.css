@@ -3,16 +3,17 @@
 }
 
 .section-left {
-  width: 50%;
+  width: 100%;
 }
 
 .section-right {
-  width: 50%;
+  width: 100%;
   font-size: 50px;
-  padding: 100px;
+  padding: 10px;
   text-align: start;
   font-weight: bold;
   color: #9a3333;
+  text-align: center;
 }
 
 .section-Heading {

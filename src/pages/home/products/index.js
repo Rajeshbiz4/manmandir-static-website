@@ -13,15 +13,20 @@ const Products = () => {
     "TABLE"
   ];
   return (
-    <div>
-      <div className="section-Heading">OUR PRODUCTS</div>
+    <div >
+         <h1 class="design_taital" style={{paddingTop : '100px'}}> We are dealing with following Products </h1>
       <div class="product-container">
+        
         {products.map((item, index) => {
           return (
-            <div class="item" key={index}>
-              <img src={url} alt="" height={200} width={200} />
-              <div className="product-name">{item}</div>
+            <div class="col-md-4">
+            <div class="box_main">
+               <p class="chair_text">Chair 01</p>
+               <div class="image_3" href="#"><img src="images/img-3.png" /></div>
+               <p class="chair_text">Price $100</p>
+               <div class="buy_bt"><a href="#">Buy Now</a></div>
             </div>
+         </div>
           );
         })}
       </div>
