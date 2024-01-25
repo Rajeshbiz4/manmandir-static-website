@@ -12,8 +12,9 @@ const FilterComponent = ({ onFilter }) => {
     onFilter(selectedValue);
   };
 
+  
   return (
-    <div className="filter-container">
+    <div className="flex-container">
       {filterOptions.map((item) => {
         return (
           <label className="radio-button">

@@ -480,6 +480,7 @@
     }
     .footer_location_text ul {
         text-align: left;
+        display: contents !important;
     }
     .useful_text {
         padding-top: 20px;

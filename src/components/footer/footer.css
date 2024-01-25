@@ -121,6 +121,7 @@ footer {
     background-color: #100703;
     height: auto;
     padding: 50px;
+    display: block;
 }
 }
 
