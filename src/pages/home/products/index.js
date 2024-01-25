@@ -17,7 +17,7 @@ const Products = () => {
        {key:"TABLE", Value: "A flat-surfaced piece of furniture with legs, used for various activities like dining, working, or displaying items.",img: 'images/abcd.jpg'}]
   return (
     <div class="about_section layout_padding" id="products">
-         <h1 class="design_taital" style={{paddingTop : '100px'}}> We are dealing with following Products </h1>
+         <h1 class="design_taital"> We are dealing with following Products </h1>
       <div class="product-container" >
         
         {products.map((item, index) => {
