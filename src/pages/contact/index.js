@@ -1,12 +1,57 @@
-import React from "react";
-import contatBanner from "../../assets/contat-banner.png";
+
 import "./contact.css";
-import { useTranslation } from "react-i18next";
+import React, { useState } from 'react';
+import axios from 'axios';
+import { json } from "react-router-dom";
+
 
 const Contact = () => {
-  const { t } = useTranslation();
+
+  const [ contacusData, setContactus ] = useState({
+    name: null,
+        email: null,
+        mobile: null,
+        desc: null,
+  })
+
+  const onChange = (e) => {
+    setContactus( { ...contacusData , [e.target.name]: e.target.value})
+  }
+
+  const postData = async () => {
+    if(contacusData.name && contacusData.mobile && contacusData.email && contacusData.desc ){
+    try {
+      const response = await axios.post('https://test-node-project-delta.vercel.app/register', {
+        // Your request data here
+        ...contacusData
+      },
+      {
+        headers: {
+          'Content-Type': 'application/json', // Example header, adjust as needed
+          // Add any other headers here
+        },
+      });
+
+      // Handle the response data
+      // setResponseData(response.data);
+      console.log('Response:', response);
+      alert(" Thanks for connecting with us, soon we will contact you.")
+      setContactus({
+        name: null,
+        email: null,
+        mobile: null,
+        desc: null,
+      })
+    } catch (error) {
+      // Handle error
+      console.error('Error:', error);
+    }
+  }
+  };
+
   return (
     <>
+    {JSON.stringify(contacusData)}
       <div class="contact_section layout_padding" id="contact">
         <div style={{ width : "90%",   margin: '0 auto'}}>
           <div class="contact_section_2">
@@ -14,36 +59,46 @@ const Contact = () => {
               <div class="col-12 col-md-6">
                 <div class="mail_section_1">
                   <h1 class="contact_taital">Contact Us</h1>
+             
                   <input
                     type="text"
                     class="mail_text"
                     id="input"
                     placeholder="Name"
-                    name="text"
+                    name="name"
+                    value={contacusData.name}
+                    onChange={onChange}
                   />
                   <input
-                    type="text"
+                    type="email"
                     class="mail_text"
                     id="input"
+                    value={contacusData.email}
                     placeholder="Email"
-                    name="text"
+                    name="email"
+                    onChange={onChange}
                   />
                   <input
-                    type="text"
+                    type="mobile"
                     class="mail_text"
                     id="input"
+                    value={contacusData.mobile}
                     placeholder="Phone Number"
-                    name="text"
+                    name="mobile"
+                    onChange={onChange}
                   />
                   <textarea
                     class="massage-bt"
                     placeholder="Massage"
                     rows="5"
                     id="comment"
-                    name="Massage"></textarea>
+                    value={contacusData.desc}
+                    onChange={onChange}
+                    name="desc"></textarea>
                   <div class="send_bt">
-                    <a href="#">SEND</a>
+                    <a type="submit" onClick={() => postData()}>SEND</a>
                   </div>
+              
                 </div>
               </div>
               <div class="col-12 col-md-6">
