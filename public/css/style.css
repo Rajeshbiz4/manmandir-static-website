@@ -442,12 +442,13 @@ button {
     left: initial;
     right: 0px;
     bottom: 0px;
+    rotate: 180deg;
 }
 
 .readmore_bt {
     width: 170px;
     float: left;
-    margin-top: 30px;
+    margin: 30px;
 }
 
 .readmore_bt a {

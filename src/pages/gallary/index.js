@@ -1,7 +1,6 @@
 
 import React, { useEffect, useState } from "react";
 import "./home.css";
-import Card from "../../components/card/card";
 import FilterComponent from "../../components/Filter";
 import data from "./data";
 import { filterOptions } from "../../constants";
@@ -16,17 +15,25 @@ const Gallary = () => {
 
   return (
     <>
+    <div style={{ height: '100px'}}></div>
       <FilterComponent onFilter={setFilter} />
       <div class="flex-container">
         {result && result.length ? (
           result?.map((item) => {
-            return <Card {...item} />;
+            return (<div class="col-md-4">
+            <div class="box_main">
+               <p class="chair_text">{item.title}</p>
+               <div class="image_3" href="#"><img src={item.url}/></div>
+               <p class="chair_text">{item.desc}</p>
+               {/* <div class="buy_bt"><a href="/gallary">view more</a></div> */}
+            </div>
+         </div>)
           })
         ) : (
-          <span className="no-data">
+          <div className="no-data" style={{ height: '50vh'}}>
             Currenlty there is no any image available!!! Wait will uploading
             soon ...
-          </span>
+          </div>
         )}
       </div>
     </>

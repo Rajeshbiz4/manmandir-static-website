@@ -10,7 +10,7 @@
 }
 
 .flex-container > div {
-  background-color: DodgerBlue;
+  /* background-color: DodgerBlue; */
   color: white;
   width: 24%;
   margin: 15px;

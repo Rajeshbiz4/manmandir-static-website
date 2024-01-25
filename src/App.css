@@ -80,7 +80,7 @@ body {
 
 .nav-item {
   line-height: 40px;
-  margin-right: 1rem;
+  /* margin-right: 1rem; */
 }
 
 .nav-item:after {
@@ -98,8 +98,8 @@ body {
 }
 
 .nav-item.active {
-  color: #ffdd40;
   border: 1px solid #ffdd40;
+  color: black;
 }
 
 .nav-icon {
@@ -108,10 +108,11 @@ body {
 
 @media screen and (max-width: 960px) {
   .nav-menu {
+    padding: 0px;
     display: flex;
     flex-direction: column;
     width: 100%;
-    border-top: 1pxsolid #fff;
+    border-top: 1px solid #fff;
     position: absolute;
     top: 80px;
     left: -110%;
@@ -120,14 +121,13 @@ body {
   }
 
   .nav-menu.active {
-    background: #fff;
+    background: #0e0e0e;
     left: 0px;
     opacity: 1;
     transition: all 0.5s ease;
     z-index: 1;
   }
   .nav-item .active {
-    color: #795548;
     border: none;
   }
   .nav-links {

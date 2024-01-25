@@ -1,0 +1,39 @@
+#navbar {
+  background-color: #7c2c0c;;
+  border-bottom: 2px solid rgb(43, 41, 41);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  /* display: none; */
+}
+#navbar ul {
+  background-color: #7c2c0c;;
+  /* margin-left: 20vh; */
+  /* margin-top: -8px; */
+  align-items: start;
+}
+#navbar ul li {
+  /* background-color: #facb91; */
+}
+#navbar .logo {
+  font-size: 25px;
+  color: #fff;
+  text-transform: uppercase;
+  /* color: #9a3333; */
+  align-items: center;
+  font-weight: 700;
+}
+.navbar-toggler {
+  background-color: #ffffff; /* Set your desired background color */
+  border: 1px solid #ffffff; /* Set your desired border color */
+}
+
+.navbar-toggler-icon {
+  color: #000000; /* Set your desired color */
+}
+
+.navbar-toggler-icon {
+  background-size: contain; /* Adjust the background size as needed */
+  width: 30px; /* Set the width of the icon */
+  height: 30px; /* Set the height of the icon */
+}
