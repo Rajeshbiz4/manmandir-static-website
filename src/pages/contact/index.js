@@ -37,10 +37,10 @@ const Contact = () => {
       console.log('Response:', response);
       alert(" Thanks for connecting with us, soon we will contact you.")
       setContactus({
-        name: null,
-        email: null,
-        mobile: null,
-        desc: null,
+        name: '',
+        email: '',
+        mobile: '',
+        desc: '',
       })
     } catch (error) {
       // Handle error
@@ -51,7 +51,6 @@ const Contact = () => {
 
   return (
     <>
-    {JSON.stringify(contacusData)}
       <div class="contact_section layout_padding" id="contact">
         <div style={{ width : "90%",   margin: '0 auto'}}>
           <div class="contact_section_2">
